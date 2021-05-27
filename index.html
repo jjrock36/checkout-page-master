@@ -16,80 +16,148 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" type="text/css">
 
     <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
+
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <section class="section">
+      <div class="header">
+        <h1>Checkout</h1>
       </div>
+      <div class="section-center">
+        <!-- Title -->
+        
+        <!-- Cart -->
+        <div class="cart">
+          <!-- first item -->
+          <div class="cart-item">
+            <img class="cart-item-img" src="photo1.png" alt="backpack" />
+            <div class="cart-item-description">
+              <h4>vintage backbag</h4>
+              <div class="cart-item-price">
+                <p class="sale-price">$54.99</p>
+                <p class="regular-price">$94.99</p>
+              </div>
+              <div class="cart-item-quantity">
+                <i class="fas fa-minus icon"></i>
+                <p class="amount">1</p>
+                <i class="fas fa-plus icon"></i>
+              </div>
+            </div>
+          </div>
+          <!-- second item -->
+          <div class="cart-item">
+            <img class="cart-item-img" src="photo2.png" alt="shoes" />
+            <div class="cart-item-description">
+              <h4>vintage backbag</h4>
+              <div class="cart-item-price">
+                <p class="sale-price">$74.99</p>
+                <p class="regular-price">$124.99</p>
+              </div>
+              <div class="cart-item-quantity">
+                <i class="fas fa-minus icon"></i>
+                <p class="amount">1</p>
+                <i class="fas fa-plus icon"></i>
+              </div>
+            </div>
+          </div>
+          <!-- shipping and total -->
+          <div class="cart-total">
+            <hr class="line">
+            <!-- shipping -->
+            <div class="total-shipping">
+              <p class="shipping-title">Shipping</p>
+              <p class="shipping-cost">$19</p>
+            </div>
+            <hr class="line">
+            <!-- total -->
+            <div class="total-total">
+              <p class="total-title">Total</p>
+              <p class="total-cost">$148.98</p>
+            </div>
+          </div>
+        </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+        <!-- Personal Info -->
+        <div class="info">
+          <!-- Contact -->
+          <h2>Contact information</h2>
+          <form class="contact-info">
+            <!-- email -->
+            <div class="form-control">
+              <label for="email">E-mail</label>
+              <i class="fas fa-envelope placeholder-icon"></i>
+              <input type="email" name="email" id="email" placeholder="Enter your email..."/>
+              
+            </div>
+            <!-- phone -->
+            <div class="form-control">
+              <label for="phone">Phone</label>
+              <i class="fas fa-phone placeholder-icon"></i>
+              <input type="tel" name="phone" id="phone" placeholder="Enter your phone..."/>
+            </div>
+          </form>
+          <!-- Shipping -->
+          <h2>Shipping address</h2>
+          <form class="shipping-info">
+            <!-- full name -->
+            <div class="form-control">
+              <label for="name">Full name</label>
+              <i class="fas fa-user placeholder-icon"></i>
+              <input type="text" name="name" id="name"
+              value="Rodney Cotton" placeholder="Your name..."/>
+            </div>
+            <!-- address -->
+            <div class="form-control">
+              <label for="address">Address</label>
+              <i class="fas fa-home placeholder-icon"></i>
+              <input type="text" name="address" id="address" placeholder="Your address..."/>
+            </div>
+            <!-- city -->
+            <div class="form-control">
+              <label for="city">City</label>
+              <i class="fas fa-building placeholder-icon"></i>
+              <input type="text" name="city" id="city" placeholder="Your city..."/>
+            </div>
+            <!-- country -->
+            <div class="form-control country-postal-input">
+              <div class="country-input">
+                <label for="country">Country</label>
+                <i class="fas fa-globe placeholder-icon"></i>
+                <input type="text" name="country" id="country" placeholder="Your country...">
+              </div>
+              <!-- postal code -->
+              <div class="postal-input">
+                <label for="postal">Postal code</label>
+                <i class="fas fa-mail-bulk oddball-icon"></i>
+                <input type="number" maxlength="5" name="postal" id="postal" placeholder="Your postal code..."/>
+              </div>
+            </div>
+            <!-- save info -->
+            <div class="form-control save-info">
+              <input type="checkbox" name="save" id="save" value="save" />
+              <label for="save">Save information for next time</label>
+            </div>
+            <!-- submit button -->
+            <div class="button">
+              <button class="submit-btn" type="submit">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>
+        created by <a href="#">jjrock36</a> - devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>

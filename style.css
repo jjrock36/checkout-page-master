@@ -1,0 +1,233 @@
+/* || Root */
+:root {
+  --main-font: 'Montserrat', sans-serif;
+
+  --white-1: #ffffff;
+  --gray-1: #828282;
+  --gray-2: #333333;
+  --gray-3: #f2f2f2;
+  --gray-4: #4e5150;
+  --gray-5: #bdbdbd;
+  --gray-6: #e0e0e0;
+  --gray-7: #4f4f4f;
+  --orange-1: #f2994a;
+
+  --radius: 12px;
+}
+
+/* || General Styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--main-font);
+  font-size: 0.875rem;
+  color: var(--gray-2);
+  background-color: var(--white-1);
+}
+h1 {
+  font-size: 1.5rem;
+  color: var(--gray-4);
+}
+h2 {
+  font-size: 0.875rem;
+}
+h4 {
+  font-size: 0.75rem;
+  color: var(--gray-4);
+}
+a {
+  color: var(--gray-5);
+}
+
+/* || Section */
+.section {
+  width: 100%;
+  max-width: 960px;
+  justify-content: center;
+}
+.section-center {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .section-center {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+/* cart */
+.cart {
+  background-color: var(--gray-3);
+  border-radius: var(--radius);
+}
+.cart-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+.cart-item-img {
+  width: 50%;
+  height: 50%;
+  border-radius: var(--radius);
+}
+.cart-item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.cart-item-description h4 {
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+.cart-item-price {
+  display: flex;
+  align-items: center;
+}
+.sale-price {
+  margin-right: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--orange-1);
+}
+.regular-price {
+  margin-left: 0.25rem;
+  font-size: 0.625rem;
+  text-decoration: line-through;
+}
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--gray-1);
+  border-radius: var(--radius);
+  margin-bottom: 0;
+}
+.icon {
+  background-color: var(--gray-6);
+  color: var(--gray-1);
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 0.2rem;
+}
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+.line {
+  width: 100%;
+  border: 1px solid var(--gray-5);
+  margin-bottom: 0;
+}
+.total-shipping,
+.total-total {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 800px) {
+  .cart {
+    height: 100%;
+  }
+  .cart-item-img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem auto;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+.form-control {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.625rem;
+  color: var(--gray-7);
+}
+.form-control input[type='text'],
+input[type='number'],
+input[type='tel'],
+input[type='email'] {
+  width: 100%;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-size: 0.75rem;
+  color: var(--gray-2);
+  border: 1px solid var(--gray-1);
+  border-radius: var(--radius);
+}
+::placeholder {
+  color: var(--gray-1);
+}
+.placeholder-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 1.75rem;
+  color: var(--gray-1);
+}
+.oddball-icon {
+  position: absolute;
+  top: 1.75rem;
+  right: 9.5rem;
+}
+.shipping-info {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.country-postal-input {
+  display: flex;
+  flex-direction: row;
+}
+.country-input {
+  margin-right: 1rem;
+}
+.save-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.form-control input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit-btn {
+  background-color: var(--orange-1);
+  border: var(--orange-1);
+  border-radius: var(--radius);
+  color: var(--white-1);
+  padding: 1rem 3.5rem;
+  font-size: 1rem;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 800px) {
+  .info {
+  }
+}
+/* footer */
+.footer {
+  margin-top: 5rem;
+  color: var(--gray-5);
+  font-size: 0.875rem;
+  text-align: center;
+}
