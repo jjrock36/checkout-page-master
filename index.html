@@ -29,12 +29,11 @@
 
   <body>
     <section class="section">
+      <!-- Title -->
       <div class="header">
         <h1>Checkout</h1>
       </div>
       <div class="section-center">
-        <!-- Title -->
-        
         <!-- Cart -->
         <div class="cart">
           <!-- first item -->
@@ -47,9 +46,9 @@
                 <p class="regular-price">$94.99</p>
               </div>
               <div class="cart-item-quantity">
-                <i class="fas fa-minus icon"></i>
+                <i class="fas fa-minus quantity-icon"></i>
                 <p class="amount">1</p>
-                <i class="fas fa-plus icon"></i>
+                <i class="fas fa-plus quantity-icon"></i>
               </div>
             </div>
           </div>
@@ -57,15 +56,15 @@
           <div class="cart-item">
             <img class="cart-item-img" src="photo2.png" alt="shoes" />
             <div class="cart-item-description">
-              <h4>vintage backbag</h4>
+              <h4>levi shoes</h4>
               <div class="cart-item-price">
                 <p class="sale-price">$74.99</p>
                 <p class="regular-price">$124.99</p>
               </div>
               <div class="cart-item-quantity">
-                <i class="fas fa-minus icon"></i>
+                <i class="fas fa-minus quantity-icon"></i>
                 <p class="amount">1</p>
-                <i class="fas fa-plus icon"></i>
+                <i class="fas fa-plus quantity-icon"></i>
               </div>
             </div>
           </div>
@@ -93,14 +92,14 @@
           <form class="contact-info">
             <!-- email -->
             <div class="form-control">
-              <label for="email">E-mail</label>
+              <label class="info-label-text" for="email">E-mail</label>
               <i class="fas fa-envelope placeholder-icon"></i>
               <input type="email" name="email" id="email" placeholder="Enter your email..."/>
               
             </div>
             <!-- phone -->
             <div class="form-control">
-              <label for="phone">Phone</label>
+              <label class="info-label-text" for="phone">Phone</label>
               <i class="fas fa-phone placeholder-icon"></i>
               <input type="tel" name="phone" id="phone" placeholder="Enter your phone..."/>
             </div>
@@ -110,34 +109,34 @@
           <form class="shipping-info">
             <!-- full name -->
             <div class="form-control">
-              <label for="name">Full name</label>
+              <label class="info-label-text" for="name">Full name</label>
               <i class="fas fa-user placeholder-icon"></i>
               <input type="text" name="name" id="name"
               value="Rodney Cotton" placeholder="Your name..."/>
             </div>
             <!-- address -->
             <div class="form-control">
-              <label for="address">Address</label>
+              <label class="info-label-text" for="address">Address</label>
               <i class="fas fa-home placeholder-icon"></i>
               <input type="text" name="address" id="address" placeholder="Your address..."/>
             </div>
             <!-- city -->
             <div class="form-control">
-              <label for="city">City</label>
+              <label class="info-label-text" for="city">City</label>
               <i class="fas fa-building placeholder-icon"></i>
               <input type="text" name="city" id="city" placeholder="Your city..."/>
             </div>
             <!-- country -->
             <div class="form-control country-postal-input">
               <div class="country-input">
-                <label for="country">Country</label>
+                <label class="info-label-text" for="country">Country</label>
                 <i class="fas fa-globe placeholder-icon"></i>
                 <input type="text" name="country" id="country" placeholder="Your country...">
               </div>
               <!-- postal code -->
               <div class="postal-input">
-                <label for="postal">Postal code</label>
-                <i class="fas fa-mail-bulk oddball-icon"></i>
+                <label class="info-label-text" for="postal">Postal code</label>
+                <i class="fas fa-mail-bulk placeholder-icon"></i>
                 <input type="number" maxlength="5" name="postal" id="postal" placeholder="Your postal code..."/>
               </div>
             </div>
@@ -153,11 +152,11 @@
           </form>
         </div>
       </div>
+      <footer class="footer">
+        <p>
+          created by <a href="#">jjrock36</a> - devChallenges.io
+        </p>
+      </footer>
     </section>
-    <footer class="footer">
-      <p>
-        created by <a href="#">jjrock36</a> - devChallenges.io
-      </p>
-    </footer>
   </body>
 </html>
