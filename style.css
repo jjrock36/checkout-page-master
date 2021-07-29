@@ -32,6 +32,13 @@ body {
   font-size: 0.875rem;
   color: var(--gray-2);
   background-color: var(--white-1);
+  overflow: auto;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
 }
 h1 {
   margin: 1rem 0 1.25rem 0;
