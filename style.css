@@ -1,6 +1,6 @@
 /* || Root */
 :root {
-  --main-font: 'Montserrat', sans-serif;
+  --main-font: "Montserrat", sans-serif;
 
   --white-1: #ffffff;
   --gray-1: #828282;
@@ -199,10 +199,14 @@ a {
   font-size: 0.625rem;
   color: var(--gray-7);
 }
-.form-control input[type='text'],
-input[type='number'],
-input[type='tel'],
-input[type='email'] {
+.form-control input:focus,
+.form-control select:focus {
+  outline: none;
+}
+.form-control input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.75rem;
@@ -213,6 +217,17 @@ input[type='email'] {
   border: 1px solid var(--gray-1);
   border-radius: var(--radius);
 }
+.form-control select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  font-family: var(--main-font);
+  font-size: 0.75rem;
+  color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  border-radius: var(--radius);
+}
+
 ::placeholder {
   color: var(--gray-1);
 }
@@ -245,7 +260,7 @@ input[type='email'] {
   flex-direction: row;
   align-items: center;
 }
-.form-control input[type='checkbox'] {
+.form-control input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 .button {
@@ -280,10 +295,16 @@ input[type='email'] {
   #postal {
     margin-top: 0.5rem;
   }
-  .form-control input[type='text'],
-  input[type='number'],
-  input[type='tel'],
-  input[type='email'] {
+  .form-control input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"] {
+    margin-top: 0.5rem;
+    padding: 1.25rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+  }
+  .form-control select {
     margin-top: 0.5rem;
     padding: 1.25rem;
     padding-left: 3rem;

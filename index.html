@@ -42,13 +42,13 @@
             <div class="cart-item-description">
               <h4>vintage backbag</h4>
               <div class="cart-item-price">
-                <p class="sale-price">$54.99</p>
+                <p class="sale-price">$<span class="backbag-price">54.99</span></p>
                 <p class="regular-price">$94.99</p>
               </div>
               <div class="cart-item-quantity">
-                <i class="fas fa-minus quantity-icon"></i>
-                <p class="amount">1</p>
-                <i class="fas fa-plus quantity-icon"></i>
+                <i class="fas fa-minus quantity-icon decrease-item-1"></i>
+                <p class="amount backbag">0</p>
+                <i class="fas fa-plus quantity-icon increase-item-1"></i>
               </div>
             </div>
           </div>
@@ -58,13 +58,13 @@
             <div class="cart-item-description">
               <h4>levi shoes</h4>
               <div class="cart-item-price">
-                <p class="sale-price">$74.99</p>
+                <p class="sale-price shoes-price">$74.99</p>
                 <p class="regular-price">$124.99</p>
               </div>
               <div class="cart-item-quantity">
-                <i class="fas fa-minus quantity-icon"></i>
-                <p class="amount">1</p>
-                <i class="fas fa-plus quantity-icon"></i>
+                <i class="fas fa-minus quantity-icon decrease-item-2"></i>
+                <p class="amount shoes">0</p>
+                <i class="fas fa-plus quantity-icon increase-item-2"></i>
               </div>
             </div>
           </div>
@@ -74,13 +74,13 @@
             <!-- shipping -->
             <div class="total-shipping">
               <p class="shipping-title">Shipping</p>
-              <p class="shipping-cost">$19</p>
+              <p>$<span class="shipping-cost">0</span></p>
             </div>
             <hr class="line">
             <!-- total -->
             <div class="total-total">
               <p class="total-title">Total</p>
-              <p class="total-cost">$148.98</p>
+              <p>$<span class="total-cost">0</span></p>
             </div>
           </div>
         </div>
@@ -94,14 +94,14 @@
             <div class="form-control">
               <label class="info-label-text" for="email">E-mail</label>
               <i class="fas fa-envelope placeholder-icon"></i>
-              <input type="email" name="email" id="email" placeholder="Enter your email..."/>
+              <input class='input' type="email" name="email" id="email" placeholder="Enter your email..."/>
               
             </div>
             <!-- phone -->
             <div class="form-control">
               <label class="info-label-text" for="phone">Phone</label>
               <i class="fas fa-phone placeholder-icon"></i>
-              <input type="tel" name="phone" id="phone" placeholder="Enter your phone..."/>
+              <input class='input' type="tel" name="phone" id="phone" placeholder="Enter your phone..."/>
             </div>
           </form>
           <!-- Shipping -->
@@ -111,33 +111,38 @@
             <div class="form-control">
               <label class="info-label-text" for="name">Full name</label>
               <i class="fas fa-user placeholder-icon"></i>
-              <input type="text" name="name" id="name"
-              value="Rodney Cotton" placeholder="Your name..."/>
+              <input class='input' type="text" name="name" id="name" placeholder="Your name..."/>
             </div>
             <!-- address -->
             <div class="form-control">
               <label class="info-label-text" for="address">Address</label>
               <i class="fas fa-home placeholder-icon"></i>
-              <input type="text" name="address" id="address" placeholder="Your address..."/>
+              <input class='input' type="text" name="address" id="address" placeholder="Your address..."/>
             </div>
             <!-- city -->
             <div class="form-control">
               <label class="info-label-text" for="city">City</label>
               <i class="fas fa-building placeholder-icon"></i>
-              <input type="text" name="city" id="city" placeholder="Your city..."/>
+              <input class='input' type="text" name="city" id="city" placeholder="Your city..."/>
             </div>
             <!-- country -->
             <div class="form-control country-postal-input">
               <div class="country-input">
                 <label class="info-label-text" for="country">Country</label>
                 <i class="fas fa-globe placeholder-icon"></i>
-                <input type="text" name="country" id="country" placeholder="Your country...">
+                <select class='input' name="country" id="country">
+                  <option value="" id="option">Your country...</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Japan">Japan</option>
+                </select>
               </div>
               <!-- postal code -->
               <div class="postal-input">
                 <label class="info-label-text" for="postal">Postal code</label>
                 <i class="fas fa-mail-bulk placeholder-icon"></i>
-                <input type="number" maxlength="5" name="postal" id="postal" placeholder="Your postal code..."/>
+                <input class='input' type="text" pattern="[0-9]*" name="postal" id="postal" placeholder="Your postal code..."/>
               </div>
             </div>
             <!-- save info -->
@@ -158,5 +163,7 @@
         </p>
       </footer>
     </section>
+    <!-- JavaSript -->
+    <script src="index.js"></script>
   </body>
 </html>
